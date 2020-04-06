@@ -6,7 +6,7 @@ const express = require('express'); //imports express servers
 const app = express();
 
 app.get('/', (rec, res) => {
-    res.send({ hi: 'there' })
+	res.send({ bye: 'buddy' })
 });
 
 const PORT = process.env.PORT || 5000;
