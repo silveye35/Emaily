@@ -13,9 +13,6 @@ passport.use(
     callbackURL: '/auth/google/callback'
 }, 
 (accessToken, refreshToken, profile, done) => {
-    console.log('access token', accessToken);
-    console.log('refresh token', refreshToken);
-    console.log('profile', profile);
     new User({ googleId: profile.id }).save();
 }
 )); //passport.use: use new strategy (GoogleOauth) that is passed in.
