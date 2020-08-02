@@ -13,7 +13,18 @@ passport.use(
     callbackURL: '/auth/google/callback'
 }, 
 (accessToken, refreshToken, profile, done) => {
-    new User({ googleId: profile.id }).save();
+    // console.log("accesstoken: ", accessToken);
+    // console.log("refresh token: ", refreshToken);
+    // console.log("profile: ", profile);
+    User.findOne({ googleId: profile.id })
+        .then((existingUser) => {
+            if (existingUser) {
+                // we already have a record with the given profile ID
+            } else {
+                // we don't have a user record with this ID, make a new record!
+                new User({ googleId: profile.id }).save();
+            }
+        })
 }
 )); //passport.use: use new strategy (GoogleOauth) that is passed in.
 
