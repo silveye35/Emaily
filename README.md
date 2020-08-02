@@ -1,14 +1,8 @@
-<a href="http://fvcproductions.com"><img src="https://avatars1.githubusercontent.com/u/4284691?v=3&s=200" title="FVCproductions" alt="FVCproductions"></a>
+# Emaily
 
-<!-- [![FVCproductions](https://avatars1.githubusercontent.com/u/4284691?v=3&s=200)](http://fvcproductions.com) -->
+> SurveyMonkey mock-up using React, Node.js, MongoDB, Mongoose, Redux, and Express
 
-***INSERT GRAPHIC HERE (include hyperlink in image)***
-
-# Repository Title Goes Here
-
-> Subtitle or Short Description Goes Here
-
-> ideally one sentence
+> Built to get an idea of how Node.js fullstack works
 
 > include terms/tags that can be searched
 
